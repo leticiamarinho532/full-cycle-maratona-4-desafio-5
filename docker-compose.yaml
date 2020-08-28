@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    app:
+        build: .
+        entrypoint: npm run start:dev
+        container_name: full-cycle-maratona-4-desafio-5
+        ports:
+            - 3000:3000
+        volumes:
+            - ./:/usr/src/app
+        working_dir: /usr/src/app
+        
