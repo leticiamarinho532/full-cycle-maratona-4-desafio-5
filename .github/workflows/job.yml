@@ -5,5 +5,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - run: docker-compose -f docker-compose.yaml up -d
+            - run: docker-compose up -d
             - run: docker exec full-cycle-maratona-4-desafio-5 npm run test
